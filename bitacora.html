@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caralibro | Bitácora de Desarrollo</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-search">
+                <div class="logo">caralibro</div>
+                <div class="search-container">
+                    <input type="text" placeholder="Buscar notas y registros">
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="perfil-template.html">Perfil</a></li>
+                    <li class="active"><a href="bitacora.html">Bitácora</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="app-container">
+        <!-- Sidebar Izquierda -->
+        <aside class="left-sidebar">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
+                <div style="width: 40px; height: 40px; background-color: #ccc; border-radius: 2px;">
+                    <img src="https://i.pravatar.cc/40?u=current" alt="User" style="width: 100%;">
+                </div>
+                <div>
+                    <div style="font-weight: bold;">User Name</div>
+                    <a href="#" style="font-size: 11px;">Editar perfil</a>
+                </div>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">🏠 Inicio</a></li>
+                    <li><a href="perfil-template.html">👤 Perfil</a></li>
+                    <li class="active"><a href="bitacora.html">📝 Notas</a></li>
+                </ul>
+
+                <div class="sidebar-title">BROWSE</div>
+                <ul style="font-size: 11px;">
+                    <li><a href="#">Mis notas</a></li>
+                    <li><a href="#">Notas sobre mí</a></li>
+                    <li><a href="#">Borradores</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Contenido Central -->
+        <main>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                <h1 style="font-size: 20px; color: #1c1e21;">Notas</h1>
+                <button class="fb-button fb-button-primary" id="write-note-btn">Escribir una nota</button>
+            </div>
+
+            <!-- Entrada de Bitácora 1 -->
+            <div class="card">
+                <div class="note-header" style="margin-bottom: 15px;">
+                    <h2 style="font-size: 18px; color: #1c1e21; margin-bottom: 5px;">Log de Desarrollo: El cambio hacia el Brutalismo Orgánico</h2>
+                    <div style="color: #606770; font-size: 11px;">14 de abril de 2024 a las 10:24 AM · 🌎</div>
+                </div>
+                <div class="note-content" style="font-size: 14px; line-height: 1.6;">
+                    <p style="margin-bottom: 15px;">
+                        Hoy finalizamos la decisión de alejarnos del enfoque estándar de bordes redondeados en favor de una estética "Retro Facebook". El objetivo es recapturar la rigidez arquitectónica de principios de la década de 2010 mientras mantenemos estándares editoriales premium.
+                    </p>
+                    <h3 style="font-size: 15px; margin-bottom: 10px;">Desafíos clave:</h3>
+                    <ul style="list-style: disc; margin-left: 20px; margin-bottom: 15px;">
+                        <li>Mantener la jerarquía visual sin el uso de bordes de alto contraste.</li>
+                        <li>Asegurar que el diseño sea adaptable (responsive) respetando los breakpoints de 400px, 900px y 1200px.</li>
+                        <li>Equilibrar la estética heredada con la accesibilidad moderna.</li>
+                    </ul>
+                    <blockquote style="border-left: 4px solid #dddfe2; padding-left: 15px; font-style: italic; color: #606770; margin-bottom: 15px;">
+                        "La jerarquía ahora se impulsa por el espacio en blanco y el peso de la fuente en lugar del sombreado decorativo. Es un aspecto más limpio y autoritario."
+                    </blockquote>
+                </div>
+                <div class="post-actions" style="border-top: 1px solid #ebedf0; padding-top: 10px; display: flex; gap: 15px;">
+                    <a href="#" class="action-link">👍 Me gusta</a>
+                    <a href="#" class="action-link">💬 Comentar</a>
+                    <a href="#" class="action-link">↪️ Compartir</a>
+                </div>
+            </div>
+
+            <!-- Entrada de Bitácora 2 -->
+            <div class="card">
+                <div class="note-header" style="margin-bottom: 15px;">
+                    <h2 style="font-size: 18px; color: #1c1e21; margin-bottom: 5px;">Lógica de Navegación y Pivot Responsive</h2>
+                    <div style="color: #606770; font-size: 11px;">12 de abril de 2024 a las 3:15 PM · 🔒</div>
+                </div>
+                <div class="note-content" style="font-size: 14px; line-height: 1.6;">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800" alt="Dev Setup" style="width: 100%; margin-bottom: 15px; border: 1px solid #dddfe2;">
+                    <p style="margin-bottom: 15px;">
+                        La implementación de la regla de Pivot Responsive está completa. Hemos eliminado exitosamente la barra de navegación inferior para las vistas de escritorio, integrando toda la navegación global en el cluster del Header superior.
+                    </p>
+                    <p>
+                        Estamos viendo mejoras significativas en el "foco en el lienzo" al suprimir los elementos innecesarios en pantallas transaccionales. La interfaz se siente significativamente menos saturada cuando el usuario está en un estado concentrado.
+                    </p>
+                </div>
+                <div class="post-actions" style="border-top: 1px solid #ebedf0; padding-top: 10px; display: flex; gap: 15px;">
+                    <a href="#" class="action-link">👍 Me gusta</a>
+                    <a href="#" class="action-link">💬 Comentar</a>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin: 20px 0;">
+                <a href="#" style="font-weight: bold;">Ver más notas</a>
+            </div>
+        </main>
+
+        <!-- Sidebar Derecha -->
+        <aside class="right-sidebar">
+            <div class="widget">
+                <div class="widget-title">BORRADORES</div>
+                <div style="font-size: 11px; color: #606770;">
+                    Tienes 2 notas sin publicar.
+                    <br><br>
+                    <a href="#" style="font-weight: bold;">Ver borradores</a>
+                </div>
+            </div>
+
+            <div class="widget">
+                <div class="widget-title">ETIQUETAS POPULARES</div>
+                <div style="display: flex; flex-wrap: wrap; gap: 5px;">
+                    <span class="skill-tag">diseño_sistemas</span>
+                    <span class="skill-tag">frontend</span>
+                    <span class="skill-tag">ux_research</span>
+                    <span class="skill-tag">brutalismo</span>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <div style="display: flex; justify-content: center; gap: 20px;">
+            <a href="index.html" class="fb-button">Volver al Inicio</a>
+            <a href="perfil-template.html" class="fb-button">Ir al Perfil</a>
+        </div>
+        <div style="margin-top: 20px; text-align: center;">
+            © 2010 School Project Archive
+        </div>
+    </footer>
+
+    <script src="js/core.js"></script>
+    <script src="js/interactions.js"></script>
+</body>
+</html>

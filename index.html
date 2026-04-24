@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caralibro | Portada</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-search">
+                <div class="logo">caralibro</div>
+                <div class="search-container">
+                    <input type="text" id="global-search" placeholder="Buscar personas, grupos y cosas">
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li class="active"><a href="index.html">Inicio</a></li>
+                    <li><a href="perfil-template.html">Perfil</a></li>
+                    <li><a href="bitacora.html">Bitácora</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="app-container">
+        <!-- Sidebar Izquierda -->
+        <aside class="left-sidebar">
+            <nav>
+                <ul>
+                    <li class="active">
+                        <span class="icon">🏠</span>
+                        <a href="index.html">Noticias</a>
+                    </li>
+                    <li>
+                        <span class="icon">💬</span>
+                        <a href="#">Mensajes</a>
+                    </li>
+                    <li>
+                        <span class="icon">📅</span>
+                        <a href="#">Eventos</a>
+                    </li>
+                </ul>
+
+                <div class="sidebar-title">Favoritos</div>
+                <ul>
+                    <li>
+                        <span class="icon">📝</span>
+                        <a href="bitacora.html">Bitácora de Proyecto</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Contenido Central -->
+        <main>
+            <!-- Cuadro de Estado -->
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">Actualizar estado</span>
+                </div>
+                <div class="status-input">
+                    <textarea id="status-textarea" placeholder="¿Qué tienes en mente, Equipo?"></textarea>
+                </div>
+                <div class="card-footer"
+                    style="display: flex; justify-content: flex-end; padding-top: 10px; border-top: 1px solid #dddfe2; margin-top: 10px;">
+                    <button class="fb-button fb-button-primary" id="post-button">Publicar</button>
+                </div>
+            </div>
+
+            <!-- Post Principal del Equipo -->
+            <div class="card">
+                <div class="post-header" style="display: flex; gap: 10px; margin-bottom: 12px;">
+                    <div class="user-avatar"
+                        style="width: 40px; height: 40px; background-color: #3b5998; border-radius: 2px; color: white; display: flex; align-items: center; justify-content: center; font-weight: bold;">
+                        AP</div>
+                    <div>
+                        <a href="#" style="font-weight: bold; font-size: 13px;">Desarrollo Cuyo - Grupo 4</a>
+                        <div style="color: #606770; font-size: 11px;">Hace 2 horas · Público</div>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <p style="font-size: 14px; margin-bottom: 15px;">
+                        Bienvenidos a nuestro archivo digital! Somos un equipo apasionado por el desarrollo web y
+                        estamos trabajando alegremente para curar los mejores recuerdos de nuestro proyecto
+                        académico.
+                        <br><br>
+                        Nuestro propósito es compartir sobre la evolución de las interfaces digitales mientras
+                        aprendemos
+                        las mejores prácticas de frontend. ¡Aquí está el equipo detrás de la magia! #Grupo4
+                        #2026 #Frontend
+                    </p>
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800"
+                        alt="Team Photo" style="width: 100%; border-radius: 2px; border: 1px solid #dddfe2;">
+                </div>
+                <div class="post-actions"
+                    style="margin-top: 10px; border-top: 1px solid #ebedf0; padding-top: 10px; display: flex; gap: 15px;">
+                    <a href="javascript:void(0)" class="action-link" id="like-btn">Me gusta</a>
+                    <a href="javascript:void(0)" class="action-link">Comentar</a>
+                    <a href="javascript:void(0)" class="action-link">Compartir</a>
+                </div>
+                <div class="post-feedback"
+                    style="background-color: #f0f2f5; padding: 8px; margin-top: 10px; border-radius: 2px;">
+                    <span id="like-counter" style="font-size: 11px; color: #65676b;">👍 Alex Chen y otras 14
+                        personas</span>
+                </div>
+            </div>
+        </main>
+
+        <!-- Sidebar Derecha -->
+        <aside class="right-sidebar">
+            <div class="widget">
+                <div class="widget-title">
+                    <span>PERSONAS QUE QUIZÁ CONOZCAS</span>
+                    <a href="#">Ver todo</a>
+                </div>
+                <div class="member-list">
+                    <!-- Integrante 1 -->
+                    <div class="member-item" style="display: flex; gap: 10px; margin-bottom: 15px;">
+                        <div style="width: 50px; height: 50px; background-color: #ccc; border-radius: 2px;">
+                            <img src="https://i.pravatar.cc/50?u=julian" alt="Julian"
+                                style="width: 100%; border-radius: 2px;">
+                        </div>
+                        <div>
+                            <a href="perfil-template.html"
+                                style="font-weight: bold; font-size: 12px; display: block;">Julian Rossi</a>
+                            <div style="color: #606770; font-size: 11px;">Project Lead</div>
+                            <button class="fb-button" style="margin-top: 5px;">Añadir</button>
+                        </div>
+                    </div>
+                    <!-- Integrante 2 Placeholder -->
+                    <div class="member-item" style="display: flex; gap: 10px; margin-bottom: 15px;">
+                        <div style="width: 50px; height: 50px; background-color: #ccc; border-radius: 2px;">
+                            <img src="https://i.pravatar.cc/50?u=sarah" alt="Sarah"
+                                style="width: 100%; border-radius: 2px;">
+                        </div>
+                        <div>
+                            <a href="#" style="font-weight: bold; font-size: 12px; display: block;">Sarah Jenkins</a>
+                            <div style="color: #606770; font-size: 11px;">Lead Designer</div>
+                            <button class="fb-button" style="margin-top: 5px;">Añadir</button>
+                        </div>
+                    </div>
+                    <!-- Integrante 3 Placeholder -->
+                    <div class="member-item" style="display: flex; gap: 10px;">
+                        <div style="width: 50px; height: 50px; background-color: #ccc; border-radius: 2px;">
+                            <img src="https://i.pravatar.cc/50?u=marcus" alt="Marcus"
+                                style="width: 100%; border-radius: 2px;">
+                        </div>
+                        <div>
+                            <a href="#" style="font-weight: bold; font-size: 12px; display: block;">Marcus Thorne</a>
+                            <div style="color: #606770; font-size: 11px;">Developer</div>
+                            <button class="fb-button" style="margin-top: 5px;">Añadir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="widget">
+                <div class="widget-title">PUBLICIDAD</div>
+                <div class="ad-content">
+                    <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&q=80&w=200"
+                        alt="Ad" style="width: 100%; margin-bottom: 5px;">
+                    <a href="#" style="font-weight: bold;">Tech Upgrade 2010</a>
+                    <p style="font-size: 11px; color: #606770;">Obtén el hardware más reciente para tus proyectos
+                        escolares hoy.</p>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">Español</a>
+            <a href="#">English (US)</a>
+            <a href="#">Português (Brasil)</a>
+            <a href="#">Français (France)</a>
+            <a href="#">Deutsch</a>
+            <a href="#">Italiano</a>
+        </div>
+        <div style="margin: 10px 0; border-top: 1px solid #dddfe2; padding-top: 10px;">
+            © 2010 School Project Archive · About · Privacy · Terms · Help
+        </div>
+    </footer>
+
+    <script src="js/core.js"></script>
+    <script src="js/interactions.js"></script>
+</body>
+
+</html>
