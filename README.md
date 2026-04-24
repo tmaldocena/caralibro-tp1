@@ -44,4 +44,3 @@ Para crear tu página individual:
 ---
 **Curso:** Frontend - TP1  
 **Equipo:** Grupo 4 - Vanesa Aracena - Fernando Rodriguez - Tomás Maldocena
-**Año:** 2024
