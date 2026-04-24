@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caralibro | Perfil de Julian Rossi</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        :root {
+            --profile-bg: #307dad;
+            --profile-accent: var(--fb-blue);
+            --profile-accent-hover: #29487d;
+            --profile-card-bg: var(--white);
+            --profile-text: var(--fb-text-black);
+            --profile-link: var(--fb-link-blue);
+            --profile-bg-img: url("");
+        }
+
+        .profile-header {
+            display: flex;
+            gap: 20px;
+            align-items: flex-end;
+            margin-bottom: 20px;
+        }
+
+        .profile-photo-container {
+            width: 160px;
+            height: 160px;
+            background-color: white;
+            border: 1px solid #dddfe2;
+            padding: 4px;
+            border-radius: 2px;
+            margin-top: -80px;
+            z-index: 10;
+        }
+
+        .profile-photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 2px;
+        }
+
+        .cover-photo {
+            height: 200px;
+            background-color: #3b5998;
+            border: 1px solid #dddfe2;
+            border-radius: 3px 3px 0 0;
+            position: relative;
+        }
+
+        .profile-nav {
+            background-color: white;
+            border: 1px solid #dddfe2;
+            border-top: none;
+            padding: 0 160px 0 200px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+        }
+
+        .profile-nav a {
+            padding: 10px 15px;
+            font-weight: bold;
+            color: #385898;
+            border-left: 1px solid #e9ebee;
+        }
+
+        .profile-nav a.active {
+            color: #4b4f56;
+            background-color: #f5f6f7;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        .info-section {
+            margin-bottom: 20px;
+        }
+
+        .info-section h3 {
+            border-bottom: 1px solid #dddfe2;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            font-size: 13px;
+            color: #4b4f56;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            background-color: #f0f2f5;
+            padding: 4px 8px;
+            border-radius: 2px;
+            margin: 0 5px 5px 0;
+            font-size: 11px;
+            border: 1px solid #dddfe2;
+        }
+
+        .movie-item {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .movie-thumb {
+            width: 50px;
+            height: 75px;
+            background-color: #ccc;
+        }
+
+        .music-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background-color: #f0f2f5;
+            padding: 8px;
+            border-radius: 2px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-search">
+                <div class="logo">caralibro</div>
+                <div class="search-container">
+                    <input type="text" placeholder="Buscar personas, grupos y cosas">
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="active"><a href="perfil-template.html">Perfil</a></li>
+                    <li><a href="bitacora.html">Bitácora</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="app-container" style="grid-template-columns: 200px 1fr;">
+        <!-- Sidebar Izquierda (Info Personal) -->
+        <aside class="left-sidebar">
+            <div class="profile-photo-container" style="margin-top: 0; width: 100%; height: auto; aspect-ratio: 1/1;">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=300"
+                    alt="Julian Rossi" class="profile-photo">
+            </div>
+
+            <div class="sidebar-title">INFORMACIÓN</div>
+            <ul style="font-size: 11px; color: #1c1e21;">
+                <li style="margin-bottom: 8px;"><strong>Relación:</strong> Soltero</li>
+                <li style="margin-bottom: 8px;"><strong>Cumpleaños:</strong> 12 de junio</li>
+                <li style="margin-bottom: 8px;"><strong>Ciudad actual:</strong> San Francisco, CA</li>
+                <li style="margin-bottom: 8px;"><strong>Edad:</strong> 25 años</li>
+            </ul>
+
+            <div class="sidebar-title">AMIGOS (482)</div>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 5px;">
+                <img src="https://i.pravatar.cc/50?u=1" alt="f" style="width: 100%;">
+                <img src="https://i.pravatar.cc/50?u=2" alt="f" style="width: 100%;">
+                <img src="https://i.pravatar.cc/50?u=3" alt="f" style="width: 100%;">
+                <img src="https://i.pravatar.cc/50?u=4" alt="f" style="width: 100%;">
+                <img src="https://i.pravatar.cc/50?u=5" alt="f" style="width: 100%;">
+                <img src="https://i.pravatar.cc/50?u=6" alt="f" style="width: 100%;">
+            </div>
+        </aside>
+
+        <!-- Contenido Central -->
+        <main>
+            <div class="profile-header-info" style="margin-bottom: 20px;">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <div>
+                        <h1 style="font-size: 24px; color: #1c1e21; margin-bottom: 5px;">Julian Rossi</h1>
+                        <p style="color: #606770; font-style: italic;">"Building the future one line of code at a time."
+                        </p>
+                    </div>
+                    <button class="fb-button fb-button-primary" id="add-friend-btn">+ Añadir amigo</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="profile-nav" style="padding: 0; margin-bottom: 15px; border-bottom: 1px solid #dddfe2;">
+                    <a href="#" class="active">Muro</a>
+                    <a href="#">Información</a>
+                    <a href="#">Fotos</a>
+                    <a href="#">Más</a>
+                </div>
+
+                <div class="info-grid">
+                    <!-- Habilidades -->
+                    <div class="info-section">
+                        <h3>Habilidades</h3>
+                        <div id="skills-container">
+                            <span class="skill-tag">Full-Stack Development</span>
+                            <span class="skill-tag">UI/UX Design</span>
+                            <span class="skill-tag">System Architecture</span>
+                            <span class="skill-tag">Public Speaking</span>
+                        </div>
+                    </div>
+
+                    <!-- Películas -->
+                    <div class="info-section">
+                        <h3>Películas Favoritas</h3>
+                        <div class="movie-item">
+                            <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?auto=format&fit=crop&q=80&w=50"
+                                class="movie-thumb" alt="Movie">
+                            <div>
+                                <div style="font-weight: bold;">Inception (2010)</div>
+                                <div style="color: #606770; font-size: 11px;">Sci-Fi / Thriller</div>
+                            </div>
+                        </div>
+                        <div class="movie-item">
+                            <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&q=80&w=50"
+                                class="movie-thumb" alt="Movie">
+                            <div>
+                                <div style="font-weight: bold;">The Social Network (2010)</div>
+                                <div style="color: #606770; font-size: 11px;">Drama / Biography</div>
+                            </div>
+                        </div>
+                        <div class="movie-item">
+                            <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&q=80&w=50"
+                                class="movie-thumb" alt="Movie">
+                            <div>
+                                <div style="font-weight: bold;">Pulp Fiction (1994)</div>
+                                <div style="color: #606770; font-size: 11px;">Crime / Drama</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Música -->
+                    <div class="info-section">
+                        <h3>Música</h3>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                            <div class="music-item">
+                                <span class="icon">🎧</span>
+                                <span>Radiohead</span>
+                            </div>
+                            <div class="music-item">
+                                <span class="icon">🎧</span>
+                                <span>Daft Punk</span>
+                            </div>
+                            <div class="music-item">
+                                <span class="icon">🎧</span>
+                                <span>The National</span>
+                            </div>
+                            <div class="music-item">
+                                <span class="icon">🎧</span>
+                                <span>LCD Soundsystem</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Muro (Wall) -->
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">Muro</span>
+                </div>
+                <div class="status-input">
+                    <textarea placeholder="Escribe algo..."></textarea>
+                </div>
+                <div style="display: flex; justify-content: flex-end; margin-top: 10px;">
+                    <button class="fb-button fb-button-primary">Compartir</button>
+                </div>
+
+                <div style="margin-top: 20px;">
+                    <div class="comment-item" style="display: flex; gap: 10px; margin-bottom: 15px;">
+                        <img src="https://i.pravatar.cc/32?u=mark" alt="mark"
+                            style="width: 32px; height: 32px; border-radius: 2px;">
+                        <div>
+                            <div style="background-color: #f0f2f5; padding: 8px; border-radius: 10px;">
+                                <a href="#" style="font-weight: bold; font-size: 11px;">Mark Chen</a>
+                                <div style="font-size: 11px;">Awesome work on the project Julian!</div>
+                            </div>
+                            <div style="font-size: 10px; color: #606770; margin-top: 2px; margin-left: 5px;">
+                                Hace 2 horas · Me gusta · Responder
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div style="display: flex; justify-content: center; gap: 20px;">
+            <a href="index.html" class="fb-button">Volver al Inicio</a>
+            <a href="bitacora.html" class="fb-button">Ir a Bitácora</a>
+        </div>
+        <div style="margin-top: 20px; text-align: center;">
+            © 2010 School Project Archive
+        </div>
+    </footer>
+
+    <script src="js/core.js"></script>
+    <script src="js/interactions.js"></script>
+</body>
+
+</html>

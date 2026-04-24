@@ -15,6 +15,14 @@
 
     --header-height: 42px;
     --max-width: 980px;
+
+    /* Copiar esto para customizar el perfil de cada uno */
+    --profile-bg: var(--fb-bg-gray);
+    --profile-accent: var(--fb-blue);
+    --profile-accent-hover: #29487d;
+    --profile-card-bg: var(--white);
+    --profile-text: var(--fb-text-black);
+    --profile-link: var(--fb-link-blue);
 }
 
 * {
@@ -25,14 +33,17 @@
 
 body {
     font-family: Tahoma, Arial, sans-serif;
-    background-color: var(--fb-bg-gray);
-    color: var(--fb-text-black);
+    background-color: var(--profile-bg);
+    background-image: var(--profile-bg-img, none);
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--profile-text);
     font-size: 12px;
     line-height: 1.34;
 }
 
 a {
-    color: var(--fb-link-blue);
+    color: var(--profile-link);
     text-decoration: none;
     cursor: pointer;
 }
@@ -169,7 +180,7 @@ main {
 }
 
 .card {
-    background-color: var(--white);
+    background-color: var(--profile-card-bg);
     border: 1px solid var(--fb-border);
     border-radius: 3px;
     margin-bottom: 20px;
@@ -247,13 +258,13 @@ main {
 }
 
 .fb-button-primary {
-    background-color: var(--fb-blue);
-    border-color: #29487d;
+    background-color: var(--profile-accent);
+    border-color: var(--profile-accent-hover);
     color: var(--white);
 }
 
 .fb-button-primary:hover {
-    background-color: #29487d;
+    background-color: var(--profile-accent-hover);
 }
 
 /* --- Footer --- */
