@@ -48,6 +48,10 @@
     }
 
     .left-sidebar {
+        order: 1;
+    }
+
+    main {
         order: 2;
     }
 
@@ -90,9 +94,6 @@
         --card-padding: 8px;
     }
 
-    .left-sidebar {
-        display: none; /* Hide on very small screens to save space */
-    }
     
     .logo {
         font-size: 16px;
