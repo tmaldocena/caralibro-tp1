@@ -26,13 +26,13 @@
         }
 
         .profile-photo-container {
-            width: 160px;
-            height: 160px;
+            width: 100%;
+            aspect-ratio: 1/1;
             background-color: white;
             border: 1px solid #dddfe2;
             padding: 4px;
             border-radius: 2px;
-            margin-top: -80px;
+            margin-bottom: 15px;
             z-index: 10;
         }
 
@@ -43,20 +43,33 @@
             border-radius: 2px;
         }
 
-        .cover-photo {
-            height: 200px;
-            background-color: #3b5998;
-            border: 1px solid #dddfe2;
-            border-radius: 3px 3px 0 0;
-            position: relative;
+        .profile-header-info {
+            margin-bottom: 20px;
+        }
+
+        .profile-header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .profile-name {
+            font-size: 24px;
+            color: var(--profile-text);
+            margin-bottom: 5px;
+        }
+
+        .profile-bio {
+            color: #606770;
+            font-style: italic;
         }
 
         .profile-nav {
             background-color: white;
-            border: 1px solid #dddfe2;
-            border-top: none;
-            padding: 0 160px 0 200px;
-            height: 40px;
+            border-bottom: 1px solid #dddfe2;
+            padding: 0;
+            margin-bottom: 15px;
             display: flex;
             align-items: center;
         }
@@ -129,7 +142,9 @@
     <header>
         <div class="header-container">
             <div class="logo-search">
-                <div class="logo">caralibro</div>
+                <a href="index.html">
+                    <div class="logo">caralibro</div>
+                </a>
                 <div class="search-container">
                     <input type="text" placeholder="Buscar personas, grupos y cosas">
                 </div>
@@ -137,17 +152,17 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
-                    <li class="active"><a href="perfil-template.html">Perfil</a></li>
+                    <li class="active"><a href="perfiles.html">Perfiles</a></li>
                     <li><a href="bitacora.html">Bitácora</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <div class="app-container" style="grid-template-columns: 200px 1fr;">
+    <div class="app-container profile-container">
         <!-- Sidebar Izquierda (Info Personal) -->
         <aside class="left-sidebar">
-            <div class="profile-photo-container" style="margin-top: 0; width: 100%; height: auto; aspect-ratio: 1/1;">
+            <div class="profile-photo-container">
                 <img src="img/tomi.png" alt="Tomas Maldocena" class="profile-photo">
             </div>
 
@@ -169,11 +184,11 @@
 
         <!-- Contenido Central -->
         <main>
-            <div class="profile-header-info" style="margin-bottom: 20px;">
-                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
-                    <div>
-                        <h1 style="font-size: 24px; color: #1c1e21; margin-bottom: 5px;">Tomas Maldocena</h1>
-                        <p style="color: #606770; font-style: italic;">"El artista en el código (a veces)"
+            <div class="profile-header-info">
+                <div class="profile-header-top">
+                    <div class="profile-name-bio">
+                        <h1 class="profile-name">Tomas Maldocena</h1>
+                        <p class="profile-bio">"El artista en el código (a veces)"
                         </p>
                     </div>
                     <button class="fb-button fb-button-primary" id="add-friend-btn">+ Añadir amigo</button>
@@ -181,7 +196,7 @@
             </div>
 
             <div class="card">
-                <div class="profile-nav" style="padding: 0; margin-bottom: 15px; border-bottom: 1px solid #dddfe2;">
+                <div class="profile-nav">
                     <a href="#" class="active">Muro</a>
                     <a href="#">Información</a>
                     <a href="#">Fotos</a>

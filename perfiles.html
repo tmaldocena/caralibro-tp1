@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caralibro | Perfiles</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        /* Customizar colores del Perfil */
+        :root {
+            --profile-bg: var(--white);
+            --profile-accent: var(--fb-blue);
+            --profile-accent-hover: #29487d;
+            --profile-card-bg: var(--white);
+            --profile-text: var(--fb-text-black);
+            --profile-link: var(--fb-link-blue);
+            /* imagen de fondo del perfil en caso de que se quiera */
+            --profile-bg-img: url('');
+        }
+
+        .profile-header {
+            display: flex;
+            gap: 20px;
+            align-items: flex-end;
+            margin-bottom: 20px;
+        }
+
+        .profile-photo-container {
+            width: 100%;
+            aspect-ratio: 1/1;
+            background-color: white;
+            border: 1px solid #dddfe2;
+            padding: 4px;
+            border-radius: 2px;
+            margin-bottom: 15px;
+            z-index: 10;
+        }
+
+        .profile-photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 2px;
+        }
+
+        .profile-header-info {
+            margin-bottom: 20px;
+        }
+
+        .profile-header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .profile-name {
+            font-size: 24px;
+            color: #1c1e21;
+            margin-bottom: 5px;
+        }
+
+        .profile-bio {
+            color: #606770;
+            font-style: italic;
+        }
+
+        .profile-nav {
+            background-color: white;
+            border-bottom: 1px solid #dddfe2;
+            padding: 0;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .profile-nav a {
+            padding: 10px 15px;
+            font-weight: bold;
+            color: #385898;
+            border-left: 1px solid #e9ebee;
+        }
+
+        .profile-nav a.active {
+            color: #4b4f56;
+            background-color: #f5f6f7;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        .info-section {
+            margin-bottom: 20px;
+        }
+
+        .info-section h3 {
+            border-bottom: 1px solid #dddfe2;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            font-size: 13px;
+            color: #4b4f56;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            background-color: #f0f2f5;
+            padding: 4px 8px;
+            border-radius: 2px;
+            margin: 0 5px 5px 0;
+            font-size: 11px;
+            border: 1px solid #dddfe2;
+        }
+
+        .movie-item {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .movie-thumb {
+            width: 50px;
+            height: 75px;
+            background-color: #ccc;
+        }
+
+        .music-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background-color: #f0f2f5;
+            padding: 8px;
+            border-radius: 2px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-search">
+                <a href="index.html">
+                    <div class="logo">caralibro</div>
+                </a>
+                <div class="search-container">
+                    <input type="text" placeholder="Buscar personas, grupos y cosas">
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="active"><a href="perfil-template.html">Perfiles</a></li>
+                    <li><a href="bitacora.html">Bitácora</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="app-container profile-container">
+        <!-- Sidebar Izquierda (Info Personal) -->
+        <aside class="left-sidebar">
+        </aside>
+
+        <!-- Contenido Central -->
+        <main>
+            <div class="widget">
+                <div class="widget-title">
+                    <span>PERSONAS QUE QUIZÁ CONOZCAS</span>
+                    <a href="#">Ver todo</a>
+                </div>
+                <div class="member-list">
+                    <!-- Integrante 1 Placeholder -->
+                    <div class="member-item" style="display: flex; gap: 10px; margin-bottom: 15px;">
+                        <div style="width: 50px; height: 50px; background-color: #ccc; border-radius: 2px;">
+                            <img src="https://i.pravatar.cc/50?u=sarah" alt="Sara"
+                                style="width: 100%; border-radius: 2px;">
+                        </div>
+                        <div>
+                            <a href="#" style="font-weight: bold; font-size: 12px; display: block;">Sara Petroccia</a>
+                            <div style="color: #606770; font-size: 11px;">Lead Designer</div>
+                            <button class="fb-button" style="margin-top: 5px;">Añadir</button>
+                        </div>
+                    </div>
+                    <!-- Integrante 2 - Tomás Maldocena -->
+                    <div class="member-item" style="display: flex; gap: 10px;">
+                        <div style="width: 50px; height: 50px; background-color: #ccc; border-radius: 2px;">
+                            <img src="img/tomi.png" alt="Tomi" style="width: 100%; border-radius: 2px;">
+                        </div>
+                        <div>
+                            <a href="perfil-tomi.html" style="font-weight: bold; font-size: 12px; display: block;">Tomi
+                                M.</a>
+                            <div style="color: #606770; font-size: 11px;">Frontend Dev</div>
+                            <button class="fb-button" style="margin-top: 5px;">Añadir</button>
+                        </div>
+                    </div>
+                    <!-- Integrante 3 - Vanesa Aracena -->
+                    <div class="member-item" style="display: flex; gap: 10px; margin-bottom: 15px;">
+                        <div style="width: 50px; height: 50px; background-color: #ccc; border-radius: 2px;">
+                            <img src="img/avatarvane.jpg" alt="Vane Ara" style="width: 100%; border-radius: 2px;">
+                        </div>
+                        <div>
+                            <a href="perfil-vane.html" style="font-weight: bold; font-size: 12px; display: block;">Vane
+                                Ara</a>
+                            <div style="color: #606770; font-size: 11px;">Developer</div>
+                            <button class="fb-button" style="margin-top: 5px;">Añadir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </main>
+    </div>
+
+    <footer>
+        <div style="display: flex; justify-content: center; gap: 20px;">
+            <a href="index.html" class="fb-button">Volver al Inicio</a>
+            <a href="bitacora.html" class="fb-button">Ir a Bitácora</a>
+        </div>
+        <div style="margin-top: 20px; text-align: center;">
+            © 2010 School Project Archive
+        </div>
+    </footer>
+
+    <script src="js/core.js"></script>
+    <script src="js/interactions.js"></script>
+</body>
+
+</html>

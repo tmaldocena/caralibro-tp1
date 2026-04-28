@@ -23,6 +23,10 @@
     --profile-card-bg: var(--white);
     --profile-text: var(--fb-text-black);
     --profile-link: var(--fb-link-blue);
+
+    /* Layout Variables */
+    --app-grid-columns: 180px 1fr 280px;
+    --card-padding: 12px;
 }
 
 * {
@@ -140,10 +144,11 @@ nav ul li.active a {
 
 /* --- Layout --- */
 .app-container {
+    width: 100%;
     max-width: var(--max-width);
     margin: calc(var(--header-height) + 20px) auto 40px;
     display: grid;
-    grid-template-columns: 180px 1fr 280px;
+    grid-template-columns: var(--app-grid-columns);
     gap: 20px;
     padding: 0 10px;
 }
@@ -184,7 +189,7 @@ main {
     border: 1px solid var(--fb-border);
     border-radius: 3px;
     margin-bottom: 20px;
-    padding: 12px;
+    padding: var(--card-padding);
 }
 
 .card-header {
@@ -216,6 +221,44 @@ main {
 
 .status-input textarea:focus {
     border-color: var(--fb-blue);
+}
+
+.card-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+    border-top: 1px solid var(--fb-border);
+    margin-top: 10px;
+}
+
+.post-actions {
+    margin-top: 10px;
+    border-top: 1px solid #ebedf0;
+    padding-top: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.post-actions a {
+    font-weight: bold;
+    color: var(--fb-text-gray);
+    font-size: 12px;
+}
+
+.post-actions a:hover {
+    text-decoration: underline;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.section-header h1 {
+    font-size: 20px;
+    color: var(--fb-text-black);
 }
 
 /* --- Right Sidebar --- */

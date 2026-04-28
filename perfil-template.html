@@ -28,13 +28,13 @@
         }
 
         .profile-photo-container {
-            width: 160px;
-            height: 160px;
+            width: 100%;
+            aspect-ratio: 1/1;
             background-color: white;
             border: 1px solid #dddfe2;
             padding: 4px;
             border-radius: 2px;
-            margin-top: -80px;
+            margin-bottom: 15px;
             z-index: 10;
         }
 
@@ -45,20 +45,33 @@
             border-radius: 2px;
         }
 
-        .cover-photo {
-            height: 200px;
-            background-color: #3b5998;
-            border: 1px solid #dddfe2;
-            border-radius: 3px 3px 0 0;
-            position: relative;
+        .profile-header-info {
+            margin-bottom: 20px;
+        }
+
+        .profile-header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .profile-name {
+            font-size: 24px;
+            color: #1c1e21;
+            margin-bottom: 5px;
+        }
+
+        .profile-bio {
+            color: #606770;
+            font-style: italic;
         }
 
         .profile-nav {
             background-color: white;
-            border: 1px solid #dddfe2;
-            border-top: none;
-            padding: 0 160px 0 200px;
-            height: 40px;
+            border-bottom: 1px solid #dddfe2;
+            padding: 0;
+            margin-bottom: 15px;
             display: flex;
             align-items: center;
         }
@@ -146,10 +159,10 @@
         </div>
     </header>
 
-    <div class="app-container" style="grid-template-columns: 200px 1fr;">
+    <div class="app-container profile-container">
         <!-- Sidebar Izquierda (Info Personal) -->
         <aside class="left-sidebar">
-            <div class="profile-photo-container" style="margin-top: 0; width: 100%; height: auto; aspect-ratio: 1/1;">
+            <div class="profile-photo-container">
                 <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=300"
                     alt="Julian Rossi" class="profile-photo">
             </div>
@@ -175,11 +188,11 @@
 
         <!-- Contenido Central -->
         <main>
-            <div class="profile-header-info" style="margin-bottom: 20px;">
-                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
-                    <div>
-                        <h1 style="font-size: 24px; color: #1c1e21; margin-bottom: 5px;">Julian Rossi</h1>
-                        <p style="color: #606770; font-style: italic;">"Building the future one line of code at a time."
+            <div class="profile-header-info">
+                <div class="profile-header-top">
+                    <div class="profile-name-bio">
+                        <h1 class="profile-name">Julian Rossi</h1>
+                        <p class="profile-bio">"Building the future one line of code at a time."
                         </p>
                     </div>
                     <button class="fb-button fb-button-primary" id="add-friend-btn">+ Añadir amigo</button>
@@ -187,7 +200,7 @@
             </div>
 
             <div class="card">
-                <div class="profile-nav" style="padding: 0; margin-bottom: 15px; border-bottom: 1px solid #dddfe2;">
+                <div class="profile-nav">
                     <a href="#" class="active">Muro</a>
                     <a href="#">Información</a>
                     <a href="#">Fotos</a>
