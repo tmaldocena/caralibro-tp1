@@ -5,6 +5,20 @@ Este proyecto es una plataforma social retro inspirada en la estética de Facebo
 
 El sitio permite explorar la portada del equipo (estilo News Feed), la bitácora de desarrollo (estilo Notas) y los perfiles individuales de los integrantes.
 
+## Integrantes
+
+- Vanesa Aracena – https://github.com/vaneara
+- Tomás Maldocena – https://github.com/tmaldocena
+- Fernando Rodríguez – https://github.com/Ferchulobo777
+
+## Tecnologías Utilizadas
+
+- HTML
+- CSS
+- JavaScript
+- Google Fonts
+- Diseño responsive 
+
 ## Estructura de Archivos
 - `/index.html`: Portada principal y muro de noticias.
 - `/bitacora.html`: Registro de decisiones y progreso del proyecto.
@@ -15,6 +29,25 @@ El sitio permite explorar la portada del equipo (estilo News Feed), la bitácora
 - `/js/interactions.js`: Funciones interactivas específicas.
 - `/img/`: Carpeta para imágenes y assets.
 - `/design/`: Capturas de pantalla del diseño original en Figma.
+
+## Guía de Estilos
+
+### Paleta de Colores
+- Azul principal: #3b5998
+- Azul header: #4267b2
+- Gris fondo: #e9ebee
+- Gris bordes: #dddfe2
+- Texto principal: #1c1e21
+- Texto secundario: #606770
+
+### Tipografías
+ Se utilizó la fuente **Roboto** de Google Fonts para mejorar la legibilidad y mantener una estética limpia y moderna.
+
+🔗 https://fonts.google.com/specimen/Roboto
+
+### Iconografía
+- Emojis nativos
+- Avatares simulados para mantener privacidad de los integrantes (Uso de IA)
 
 ## Interactividad con JavaScript
 Se han implementado las siguientes funciones para cumplir con los requerimientos mínimos:
@@ -34,13 +67,34 @@ Se han implementado las siguientes funciones para cumplir con los requerimientos
 ### Bitácora (interactions.js)
 7.  **Simulación de Nueva Nota**: El botón "Escribir una nota" solicita un título mediante un prompt y confirma la acción.
 
-## Guía para Integrantes
-Para crear tu página individual:
-1.  Duplica el archivo `perfil-template.html`.
-2.  Renómbralo como `nombre-apellido.html`.
-3.  Modifica los datos personales (Nombre, Edad, Ubicación, Habilidades, Películas, Música) en el HTML.
-4.  Asegúrate de actualizar el link en el widget "Personas que quizá conozcas" de `index.html` para que apunte a tu nueva página.
+## Capturas del Proyecto
+
+Imágenes del proyecto en la carpeta `/design/` :
+
+- Portada  
+- Bitácora  
+- Perfil de usuario  
+
+## Uso de Inteligencia Artificial
+
+### Herramientas utilizadas
+- ChatGPT (asistencia en código y redacción)
+
+
+### Uso en contenido y código
+La IA fue utilizada como herramienta de apoyo para:
+- Generar textos para Bitácora del proyecto
+- Asistir en la implementación de funcionalidades en JavaScript
+
+### Imágenes
+Los avatares fueron generados utilizando la herramienta Nano Banana a partir de fotografías reales. 
+Se aplicaron prompts orientados a transformar las imágenes en representaciones tipo avatar, adecuadas para perfiles web, priorizando una estética uniforme y el resguardo de la identidad de los integrantes.
+
+
 
 ---
 **Curso:** Frontend - TP1  
-**Equipo:** Grupo 4 - Vanesa Aracena - Fernando Rodriguez - Tomás Maldocena
+**Equipo:** Grupo 4 
+
+## Enlace al proyecto desplegado - Vercel
+
