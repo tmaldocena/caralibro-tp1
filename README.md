@@ -98,3 +98,4 @@ Se aplicaron prompts orientados a transformar las imágenes en representaciones 
 
 ## Enlace al proyecto desplegado - Vercel
 
+https://caralibro-tp1.vercel.app/
