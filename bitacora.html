@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caralibro | Bitácora de Desarrollo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -86,11 +87,45 @@
                             y 1200px.</li>
                         <li>Equilibrar la estética heredada con la accesibilidad moderna.</li>
                     </ul>
+
+                    <h3 style="font-size: 15px; margin-bottom: 10px;">Dificultades y resolución:</h3>
+                    <p style="margin-bottom: 15px;">
+                     Durante la implementación del sistema de publicaciones y comentarios, surgieron inconvenientes relacionados 
+                     con la adaptación del contenido dentro de los contenedores. En particular, los bloques de comentarios no 
+                     respetaban el ancho del contenedor principal, generando cortes visuales.
+                    </p>
+
+                    <p style="margin-bottom: 15px;">
+                     Para resolverlo, se ajustó la estructura utilizando <strong>Flexbox</strong> junto con propiedades como 
+                    <strong>max-width</strong> y <strong>width: 100%</strong>, permitiendo que los elementos se adapten de forma 
+                    fluida sin romper la composición general.
+                    </p>
+
+                    <h3 style="font-size: 15px; margin-bottom: 10px;">Cambios importantes:</h3>
+                    <ul style="list-style: disc; margin-left: 20px; margin-bottom: 15px;">
+                     <li>Se eliminó el uso excesivo de bordes redondeados para reforzar la estética retro.</li>
+                     <li>Se reorganizó la jerarquía visual utilizando márgenes, tipografía y espaciado.</li>
+                     <li>Se mejoró la estructura de los comentarios para optimizar la legibilidad.</li>
+                    </ul>
+
                     <blockquote
                         style="border-left: 4px solid #dddfe2; padding-left: 15px; font-style: italic; color: #606770; margin-bottom: 15px;">
                         "La jerarquía ahora se impulsa por el espacio en blanco y el peso de la fuente en lugar del
                         sombreado decorativo. Es un aspecto más limpio y autoritario."
                     </blockquote>
+
+                    <h3 style="font-size: 15px; margin-bottom: 10px;">Reflexión:</h3>
+                    <p style="margin-bottom: 15px;">
+                     El proceso permitió comprender la importancia de iterar sobre el diseño y ajustar tanto aspectos visuales 
+                     como técnicos. La coherencia entre estética y funcionalidad resultó clave para alcanzar una interfaz sólida.
+                    </p>
+
+                    <h3 style="font-size: 15px; margin-bottom: 10px;">Aprendizajes:</h3>
+                    <ul style="list-style: disc; margin-left: 20px; margin-bottom: 15px;">
+                     <li>Aplicación práctica de Flexbox para distribución de elementos.</li>
+                     <li>Importancia del diseño responsive desde el inicio del desarrollo.</li>
+                     <li>Mejor organización del trabajo en equipo y uso de Git.</li>
+                    </ul>
                 </div>
                 <div class="post-actions">
                     <a href="#" class="action-link">👍 Me gusta</a>
