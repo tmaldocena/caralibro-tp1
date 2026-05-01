@@ -34,6 +34,15 @@
     <div class="app-container">
         <!-- Sidebar Izquierda -->
         <aside class="left-sidebar">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
+                <div style="width: 40px; height: 40px; background-color: #ccc; border-radius: 2px;">
+                    <img src="img/default.png" alt="User" style="width: 100%;">
+                </div>
+                <div>
+                    <div style="font-weight: bold;">Visitante</div>
+                    <a href="#" style="font-size: 11px;">Editar perfil</a>
+                </div>
+            </div>
             <nav>
                 <ul>
                     <li class="active">
@@ -106,30 +115,30 @@
                     <a href="javascript:void(0)" class="action-link">Compartir</a>
                 </div>
                 <div class="comments-section" style="margin-top: 15px;">
-                <!-- Comentario 1 -->
-                  <div style="display: flex; align-items: flex-start; margin-bottom: 10px;">
-                  <img src="img/avatarvane.jpg" alt="avatar" 
-                style="width: 32px; height: 32px; border-radius: 2px;">
-                <div style="background-color: #f0f2f5; padding: 8px 12px; border-radius: 2px; width: 100%;">
-                <a href="perfil-vane.html" style="font-weight: bold; font-size: 11px;">
-                Vane Ara </a>
-                <p style="margin: 2px 0; font-size: 13px;">
-                💻 Integrantes del proyecto:<br>
-                    <br>
-                    Vanesa Aracena<br>
-                    Tomás Maldocena<br>
-                    Fernando Rodríguez<br>
-                    <br>
-                    2° comisión E- 🤓
-                </p>
+                    <!-- Comentario 1 -->
+                    <div style="display: flex; align-items: flex-start; margin-bottom: 10px;">
+                        <img src="img/avatarvane.jpg" alt="avatar"
+                            style="width: 32px; height: 32px; border-radius: 2px;">
+                        <div style="background-color: #f0f2f5; padding: 8px 12px; border-radius: 2px; width: 100%;">
+                            <a href="perfil-vane.html" style="font-weight: bold; font-size: 11px;">
+                                Vane Ara </a>
+                            <p style="margin: 2px 0; font-size: 13px;">
+                                💻 Integrantes del proyecto:<br>
+                                <br>
+                                Vanesa Aracena<br>
+                                Tomás Maldocena<br>
+                                Fernando Rodríguez<br>
+                                <br>
+                                2° comisión E- 🤓
+                            </p>
+                        </div>
+                    </div>
+                    <div class="post-feedback"
+                        style="background-color: #f0f2f5; padding: 8px; margin-top: 10px; border-radius: 2px;">
+                        <span id="like-counter" style="font-size: 11px; color: #65676b;">👍 Tomi M. y otras 14
+                            personas</span>
+                    </div>
                 </div>
-                </div>
-                <div class="post-feedback"
-                    style="background-color: #f0f2f5; padding: 8px; margin-top: 10px; border-radius: 2px;">
-                    <span id="like-counter" style="font-size: 11px; color: #65676b;">👍 Tomi M. y otras 14
-                        personas</span>
-                </div>
-            </div>
         </main>
 
         <!-- Sidebar Derecha -->
@@ -140,19 +149,7 @@
                     <a href="#">Ver todo</a>
                 </div>
                 <div class="member-list">
-                    <!-- Integrante 1 Placeholder -->
-                    <div class="member-item" style="display: flex; gap: 10px; margin-bottom: 15px;">
-                        <div style="width: 50px; height: 50px; background-color: #ccc; border-radius: 2px;">
-                            <img src="https://i.pravatar.cc/50?u=sarah" alt="Sara"
-                                style="width: 100%; border-radius: 2px;">
-                        </div>
-                        <div>
-                            <a href="#" style="font-weight: bold; font-size: 12px; display: block;">Sara Petroccia</a>
-                            <div style="color: #606770; font-size: 11px;">Lead Designer</div>
-                            <button class="fb-button" style="margin-top: 5px;">Añadir</button>
-                        </div>
-                    </div>
-                    <!-- Integrante 2 - Tomás Maldocena -->
+                    <!-- Integrante 1 - Tomás Maldocena -->
                     <div class="member-item" style="display: flex; gap: 10px;">
                         <div style="width: 50px; height: 50px; background-color: #ccc; border-radius: 2px;">
                             <img src="img/tomi.png" alt="Tomi" style="width: 100%; border-radius: 2px;">
@@ -164,7 +161,7 @@
                             <button class="fb-button" style="margin-top: 5px;">Añadir</button>
                         </div>
                     </div>
-                    <!-- Integrante 3 - Vanesa Aracena -->
+                    <!-- Integrante 2 - Vanesa Aracena -->
                     <div class="member-item" style="display: flex; gap: 10px; margin-bottom: 15px;">
                         <div style="width: 50px; height: 50px; background-color: #ccc; border-radius: 2px;">
                             <img src="img/avatarvane.jpg" alt="Vane Ara" style="width: 100%; border-radius: 2px;">
@@ -176,18 +173,19 @@
                             <button class="fb-button" style="margin-top: 5px;">Añadir</button>
                         </div>
                     </div>
-                    <!-- Integrante 4 - Fernando Rodriguez -->
+                    <!-- Integrante 3 - Fernando Rodriguez -->
                     <div class="member-item" style="display: flex; gap: 10px; margin-bottom: 15px;">
                         <div style="width: 50px; height: 50px; background-color: #ccc; border-radius: 2px;">
                             <img src="img/fer_avatar.jpg" alt="Vane Ara" style="width: 100%; border-radius: 2px;">
                         </div>
                         <div>
-                            <a href="perfil-fer.html" style="font-weight: bold; font-size: 12px; display: block;">Fernando Rodriguez</a>
+                            <a href="perfil-fer.html"
+                                style="font-weight: bold; font-size: 12px; display: block;">Fernando Rodriguez</a>
                             <div style="color: #606770; font-size: 11px;">Backend Developer</div>
                             <button class="fb-button" style="margin-top: 5px;">Añadir</button>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
 
